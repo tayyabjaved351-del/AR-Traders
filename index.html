@@ -1,0 +1,1422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>AR Traders | All Horeca Items Available</title>
+
+<meta name="description"
+content="AR Traders - All Horeca Items Available. Quality Horeca products and supplies.">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:Arial,Helvetica,sans-serif;
+    background:#f7faf8;
+    color:#17251d;
+}
+
+a{
+    text-decoration:none;
+    color:inherit;
+}
+
+.container{
+    width:92%;
+    max-width:1200px;
+    margin:auto;
+}
+
+/* TOP BAR */
+
+.topbar{
+    background:#092d1a;
+    color:white;
+    padding:9px 0;
+    font-size:14px;
+}
+
+.topbar .container{
+    display:flex;
+    justify-content:space-between;
+}
+
+/* NAVBAR */
+
+header{
+    background:white;
+    position:sticky;
+    top:0;
+    z-index:1000;
+    box-shadow:0 3px 15px rgba(0,0,0,.08);
+}
+
+.navbar{
+    min-height:75px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo{
+    display:flex;
+    align-items:center;
+    gap:10px;
+}
+
+.logo-box{
+    width:52px;
+    height:52px;
+    border-radius:15px;
+    background:linear-gradient(135deg,#087b3d,#13b865);
+    color:white;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:24px;
+    font-weight:bold;
+}
+
+.logo h2{
+    font-size:23px;
+}
+
+.logo small{
+    color:#07813f;
+    font-size:10px;
+    font-weight:bold;
+    letter-spacing:2px;
+}
+
+.nav-links{
+    display:flex;
+    gap:28px;
+    font-weight:bold;
+}
+
+.nav-links a:hover{
+    color:#07813f;
+}
+
+.cart-button{
+    border:0;
+    background:#eef8f1;
+    color:#087b3d;
+    width:45px;
+    height:45px;
+    border-radius:12px;
+    font-size:20px;
+    cursor:pointer;
+    position:relative;
+}
+
+.cart-count{
+    position:absolute;
+    top:-6px;
+    right:-5px;
+    width:20px;
+    height:20px;
+    border-radius:50%;
+    background:#e52d2d;
+    color:white;
+    font-size:11px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+/* HERO */
+
+.hero{
+    padding:70px 0;
+    background:
+    radial-gradient(circle at 90% 20%,#ffe5a6,transparent 25%),
+    radial-gradient(circle at 10% 80%,#d7f7e4,transparent 30%),
+    linear-gradient(135deg,#f8fff9,#fffaf0);
+}
+
+.hero-grid{
+    display:grid;
+    grid-template-columns:1.1fr .9fr;
+    gap:50px;
+    align-items:center;
+}
+
+.badge{
+    display:inline-block;
+    background:#e4f7eb;
+    color:#087b3d;
+    padding:9px 15px;
+    border-radius:30px;
+    font-size:13px;
+    font-weight:bold;
+    margin-bottom:18px;
+}
+
+.hero h1{
+    font-size:clamp(40px,6vw,68px);
+    line-height:1.05;
+    margin-bottom:20px;
+}
+
+.hero h1 span{
+    color:#07813f;
+}
+
+.hero p{
+    color:#68746d;
+    font-size:17px;
+    max-width:600px;
+    line-height:1.7;
+    margin-bottom:28px;
+}
+
+.buttons{
+    display:flex;
+    gap:12px;
+    flex-wrap:wrap;
+}
+
+.btn{
+    display:inline-block;
+    padding:14px 22px;
+    border-radius:13px;
+    font-weight:bold;
+}
+
+.btn-green{
+    background:#087b3d;
+    color:white;
+    box-shadow:0 8px 20px rgba(8,123,61,.2);
+}
+
+.btn-white{
+    background:white;
+    border:1px solid #dce7df;
+}
+
+.hero-card{
+    background:white;
+    padding:18px;
+    border-radius:30px;
+    box-shadow:0 15px 40px rgba(0,0,0,.10);
+}
+
+.hero-image{
+    height:360px;
+    border-radius:23px;
+    background:linear-gradient(135deg,#087b3d,#12b765);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    color:white;
+    position:relative;
+    overflow:hidden;
+}
+
+.hero-image:before{
+    content:"";
+    width:280px;
+    height:280px;
+    border-radius:50%;
+    background:rgba(255,255,255,.08);
+    position:absolute;
+    right:-100px;
+    top:-100px;
+}
+
+.hero-logo{
+    position:relative;
+    z-index:2;
+}
+
+.hero-logo strong{
+    display:block;
+    font-size:90px;
+    line-height:1;
+}
+
+.hero-logo div{
+    font-size:22px;
+    letter-spacing:5px;
+    font-weight:bold;
+}
+
+.hero-logo span{
+    display:inline-block;
+    background:white;
+    color:#087b3d;
+    margin-top:25px;
+    padding:10px 17px;
+    border-radius:30px;
+    font-size:12px;
+    font-weight:bold;
+}
+
+/* FEATURES */
+
+.features{
+    background:white;
+    padding:20px 0;
+}
+
+.feature-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+}
+
+.feature{
+    padding:15px;
+    display:flex;
+    align-items:center;
+    gap:12px;
+}
+
+.feature-icon{
+    width:45px;
+    height:45px;
+    background:#eaf8ef;
+    border-radius:13px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:21px;
+}
+
+.feature b{
+    font-size:14px;
+}
+
+.feature small{
+    color:#7a847e;
+    display:block;
+}
+
+/* SECTION */
+
+section{
+    padding:70px 0;
+}
+
+.section-title{
+    text-align:center;
+    margin-bottom:35px;
+}
+
+.section-title span{
+    color:#087b3d;
+    font-size:12px;
+    font-weight:bold;
+    letter-spacing:2px;
+}
+
+.section-title h2{
+    font-size:35px;
+    margin-top:7px;
+}
+
+.section-title p{
+    color:#758078;
+    margin-top:8px;
+}
+
+/* CATEGORIES */
+
+.category-grid{
+    display:grid;
+    grid-template-columns:repeat(6,1fr);
+    gap:15px;
+}
+
+.category{
+    background:white;
+    padding:22px 10px;
+    text-align:center;
+    border-radius:20px;
+    border:1px solid #edf0ed;
+    transition:.2s;
+}
+
+.category:hover{
+    transform:translateY(-5px);
+    box-shadow:0 12px 30px rgba(0,0,0,.08);
+}
+
+.category-icon{
+    width:60px;
+    height:60px;
+    margin:auto auto 10px;
+    background:#eef8f1;
+    border-radius:18px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:28px;
+}
+
+/* PRODUCTS */
+
+.shop-tools{
+    display:flex;
+    gap:10px;
+    margin-bottom:25px;
+    flex-wrap:wrap;
+}
+
+.search{
+    flex:1;
+    min-width:220px;
+}
+
+.search input{
+    width:100%;
+    padding:14px 17px;
+    border:1px solid #dce6df;
+    border-radius:13px;
+    outline:none;
+}
+
+.filter{
+    padding:12px 16px;
+    border:1px solid #dce6df;
+    background:white;
+    border-radius:12px;
+    cursor:pointer;
+    font-weight:bold;
+}
+
+.filter.active,
+.filter:hover{
+    background:#087b3d;
+    color:white;
+}
+
+.products{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:20px;
+}
+
+.product{
+    background:white;
+    border-radius:20px;
+    overflow:hidden;
+    border:1px solid #edf0ed;
+    box-shadow:0 5px 18px rgba(0,0,0,.04);
+    transition:.2s;
+}
+
+.product:hover{
+    transform:translateY(-5px);
+    box-shadow:0 15px 35px rgba(0,0,0,.09);
+}
+
+.product-img{
+    height:210px;
+    background:linear-gradient(135deg,#eaf8ef,#fff1d2);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:70px;
+}
+
+.product-info{
+    padding:17px;
+}
+
+.category-label{
+    background:#e7f7ec;
+    color:#087b3d;
+    padding:5px 8px;
+    border-radius:6px;
+    font-size:10px;
+    font-weight:bold;
+}
+
+.product h3{
+    margin:10px 0 5px;
+    font-size:17px;
+}
+
+.product p{
+    color:#7a847e;
+    font-size:12px;
+    min-height:38px;
+}
+
+.price{
+    color:#087b3d;
+    font-size:20px;
+    font-weight:bold;
+    margin-top:8px;
+}
+
+.old-price{
+    color:#999;
+    font-size:12px;
+    margin-left:5px;
+    text-decoration:line-through;
+}
+
+.add-cart{
+    width:100%;
+    border:0;
+    padding:12px;
+    margin-top:12px;
+    border-radius:11px;
+    background:#10271a;
+    color:white;
+    font-weight:bold;
+    cursor:pointer;
+}
+
+.add-cart:hover{
+    background:#087b3d;
+}
+
+/* BANNER */
+
+.banner{
+    background:linear-gradient(100deg,#087b3d,#10a956);
+    color:white;
+    border-radius:28px;
+    padding:40px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:20px;
+}
+
+.banner h2{
+    font-size:32px;
+}
+
+.banner p{
+    opacity:.85;
+    margin-top:7px;
+}
+
+.banner .btn{
+    background:white;
+    color:#087b3d;
+}
+
+/* ABOUT */
+
+.about{
+    background:#f0f8f2;
+}
+
+.about-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:50px;
+    align-items:center;
+}
+
+.about h2{
+    font-size:38px;
+    margin:8px 0 15px;
+}
+
+.about p{
+    color:#68746d;
+    line-height:1.7;
+}
+
+.about-card{
+    background:white;
+    padding:30px;
+    border-radius:25px;
+    box-shadow:0 12px 35px rgba(0,0,0,.08);
+}
+
+.about-card h3{
+    font-size:27px;
+    margin-bottom:15px;
+}
+
+.info{
+    padding:12px 0;
+    border-bottom:1px solid #edf0ed;
+}
+
+/* CONTACT */
+
+.contact-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:25px;
+}
+
+.contact-card{
+    background:white;
+    padding:28px;
+    border-radius:22px;
+    border:1px solid #edf0ed;
+}
+
+.contact-card h3{
+    font-size:24px;
+    margin-bottom:15px;
+}
+
+.contact-row{
+    display:flex;
+    gap:13px;
+    align-items:center;
+    padding:13px 0;
+    border-bottom:1px solid #edf0ed;
+}
+
+.contact-icon{
+    width:43px;
+    height:43px;
+    border-radius:12px;
+    background:#eaf8ef;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.contact-row small{
+    display:block;
+    color:#78837c;
+}
+
+/* FOOTER */
+
+footer{
+    background:#092018;
+    color:white;
+    padding:50px 0 18px;
+}
+
+.footer-grid{
+    display:grid;
+    grid-template-columns:1.5fr 1fr 1fr;
+    gap:40px;
+}
+
+footer p,
+footer a{
+    color:#aebdb4;
+    font-size:13px;
+    line-height:1.7;
+}
+
+footer h4{
+    margin-bottom:13px;
+}
+
+footer a{
+    display:block;
+    margin:7px 0;
+}
+
+.copyright{
+    border-top:1px solid #294036;
+    margin-top:30px;
+    padding-top:17px;
+    text-align:center;
+    color:#83968b;
+    font-size:12px;
+}
+
+/* CART */
+
+.overlay{
+    display:none;
+    position:fixed;
+    inset:0;
+    background:rgba(0,0,0,.5);
+    z-index:1999;
+}
+
+.overlay.show{
+    display:block;
+}
+
+.cart{
+    position:fixed;
+    right:-420px;
+    top:0;
+    width:min(400px,94%);
+    height:100%;
+    background:white;
+    z-index:2000;
+    transition:.3s;
+    padding:22px;
+    display:flex;
+    flex-direction:column;
+}
+
+.cart.open{
+    right:0;
+}
+
+.cart-head{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    border-bottom:1px solid #eee;
+    padding-bottom:15px;
+}
+
+.close{
+    width:38px;
+    height:38px;
+    border:0;
+    border-radius:10px;
+    cursor:pointer;
+}
+
+.cart-items{
+    flex:1;
+    overflow:auto;
+}
+
+.cart-item{
+    display:grid;
+    grid-template-columns:55px 1fr auto;
+    gap:10px;
+    padding:14px 0;
+    border-bottom:1px solid #eee;
+}
+
+.cart-img{
+    width:55px;
+    height:55px;
+    background:#eef8f1;
+    border-radius:10px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:25px;
+}
+
+.cart-item h4{
+    font-size:13px;
+}
+
+.qty{
+    display:flex;
+    gap:8px;
+    align-items:center;
+    margin-top:5px;
+}
+
+.qty button{
+    width:24px;
+    height:24px;
+    border:0;
+    border-radius:6px;
+    cursor:pointer;
+}
+
+.cart-footer{
+    border-top:1px solid #eee;
+    padding-top:15px;
+}
+
+.total{
+    display:flex;
+    justify-content:space-between;
+    font-size:20px;
+    font-weight:bold;
+    margin-bottom:12px;
+}
+
+.empty{
+    text-align:center;
+    padding:60px 10px;
+    color:#777;
+}
+
+/* MOBILE */
+
+@media(max-width:900px){
+
+    .nav-links{
+        display:none;
+    }
+
+    .hero-grid,
+    .about-grid,
+    .contact-grid{
+        grid-template-columns:1fr;
+    }
+
+    .products{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .category-grid{
+        grid-template-columns:repeat(3,1fr);
+    }
+
+    .feature-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .footer-grid{
+        grid-template-columns:1fr 1fr;
+    }
+}
+
+@media(max-width:600px){
+
+    .topbar .container{
+        justify-content:center;
+        text-align:center;
+    }
+
+    .hero{
+        padding:45px 0;
+    }
+
+    .hero h1{
+        font-size:42px;
+    }
+
+    .hero-image{
+        height:280px;
+    }
+
+    .hero-logo strong{
+        font-size:70px;
+    }
+
+    section{
+        padding:50px 0;
+    }
+
+    .category-grid{
+        grid-template-columns:repeat(3,1fr);
+        gap:8px;
+    }
+
+    .category{
+        padding:15px 5px;
+    }
+
+    .category-icon{
+        width:48px;
+        height:48px;
+        font-size:22px;
+    }
+
+    .products{
+        grid-template-columns:repeat(2,1fr);
+        gap:10px;
+    }
+
+    .product-img{
+        height:145px;
+        font-size:50px;
+    }
+
+    .product-info{
+        padding:11px;
+    }
+
+    .product h3{
+        font-size:14px;
+    }
+
+    .banner{
+        padding:27px;
+        display:block;
+    }
+
+    .banner h2{
+        font-size:26px;
+    }
+
+    .banner .btn{
+        margin-top:15px;
+    }
+
+    .footer-grid{
+        grid-template-columns:1fr;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<!-- TOP BAR -->
+
+<div class="topbar">
+<div class="container">
+<span>🟢 AR Traders — All Horeca Items Available</span>
+<span>📞 0321-9664778</span>
+</div>
+</div>
+
+
+<!-- NAVBAR -->
+
+<header>
+<div class="container navbar">
+
+<a href="#home" class="logo">
+<div class="logo-box">AR</div>
+<div>
+<h2>AR Traders</h2>
+<small>ALL HORECA ITEMS</small>
+</div>
+</a>
+
+<nav class="nav-links">
+<a href="#home">Home</a>
+<a href="#categories">Categories</a>
+<a href="#products">Products</a>
+<a href="#about">About</a>
+<a href="#contact">Contact</a>
+</nav>
+
+<button class="cart-button" onclick="openCart()">
+🛒
+<span class="cart-count" id="cartCount">0</span>
+</button>
+
+</div>
+</header>
+
+
+<!-- HERO -->
+
+<section class="hero" id="home">
+
+<div class="container hero-grid">
+
+<div>
+
+<span class="badge">⭐ Trusted Horeca Supplies</span>
+
+<h1>
+Everything Your
+<span>Horeca</span>
+Business Needs.
+</h1>
+
+<p>
+Welcome to AR Traders — your one-stop destination
+for quality Horeca items and supplies.
+Browse products and order directly through WhatsApp.
+</p>
+
+<div class="buttons">
+
+<a class="btn btn-green" href="#products">
+🛍️ Shop Products
+</a>
+
+<a class="btn btn-white"
+href="https://wa.me/923219664778"
+target="_blank">
+💬 WhatsApp Us
+</a>
+
+</div>
+
+</div>
+
+
+<div class="hero-card">
+
+<div class="hero-image">
+
+<div class="hero-logo">
+
+<strong>AR</strong>
+
+<div>TRADERS</div>
+
+<span>ALL HORECA ITEMS AVAILABLE</span>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- FEATURES -->
+
+<div class="features">
+
+<div class="container feature-grid">
+
+<div class="feature">
+<div class="feature-icon">🚚</div>
+<div>
+<b>Easy Ordering</b>
+<small>Order on WhatsApp</small>
+</div>
+</div>
+
+<div class="feature">
+<div class="feature-icon">⭐</div>
+<div>
+<b>Quality Products</b>
+<small>Horeca Supplies</small>
+</div>
+</div>
+
+<div class="feature">
+<div class="feature-icon">💬</div>
+<div>
+<b>Quick Response</b>
+<small>Contact Directly</small>
+</div>
+</div>
+
+<div class="feature">
+<div class="feature-icon">📍</div>
+<div>
+<b>Faisalabad</b>
+<small>Pakistan</small>
+</div>
+</div>
+
+</div>
+
+</div>
+
+
+<!-- CATEGORIES -->
+
+<section id="categories">
+
+<div class="container">
+
+<div class="section-title">
+<span>CATEGORIES</span>
+<h2>Shop By Category</h2>
+<p>Explore our Horeca product categories.</p>
+</div>
+
+
+<div class="category-grid">
+
+<div class="category" onclick="setCategory('Kitchen')">
+<div class="category-icon">🍳</div>
+<b>Kitchen</b>
+</div>
+
+<div class="category" onclick="setCategory('Food')">
+<div class="category-icon">🍕</div>
+<b>Food Items</b>
+</div>
+
+<div class="category" onclick="setCategory('Packaging')">
+<div class="category-icon">📦</div>
+<b>Packaging</b>
+</div>
+
+<div class="category" onclick="setCategory('Cleaning')">
+<div class="category-icon">🧽</div>
+<b>Cleaning</b>
+</div>
+
+<div class="category" onclick="setCategory('Tableware')">
+<div class="category-icon">🍽️</div>
+<b>Tableware</b>
+</div>
+
+<div class="category" onclick="setCategory('Other')">
+<div class="category-icon">✨</div>
+<b>Other</b>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- PRODUCTS -->
+
+<section id="products">
+
+<div class="container">
+
+<div class="section-title">
+<span>OUR STORE</span>
+<h2>Featured Products</h2>
+<p>Products can easily be changed from the code.</p>
+</div>
+
+
+<div class="shop-tools">
+
+<div class="search">
+<input
+id="search"
+oninput="renderProducts()"
+placeholder="🔎 Search products...">
+</div>
+
+<div id="filters"></div>
+
+</div>
+
+
+<div class="products" id="productGrid"></div>
+
+</div>
+
+</section>
+
+
+<!-- BANNER -->
+
+<section>
+
+<div class="container">
+
+<div class="banner">
+
+<div>
+
+<h2>Need a Bulk Horeca Order?</h2>
+
+<p>
+Contact AR Traders for product availability
+and bulk requirements.
+</p>
+
+</div>
+
+<a
+class="btn"
+href="https://wa.me/923219664778"
+target="_blank">
+
+💬 Contact WhatsApp
+
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ABOUT -->
+
+<section class="about" id="about">
+
+<div class="container about-grid">
+
+<div>
+
+<span style="color:#087b3d;font-weight:bold;font-size:12px;letter-spacing:2px;">
+ABOUT AR TRADERS
+</span>
+
+<h2>Your Horeca Supply Partner</h2>
+
+<p>
+AR Traders provides Horeca-related products and supplies.
+Our website makes it easy for customers to browse products
+and contact us directly.
+</p>
+
+</div>
+
+
+<div class="about-card">
+
+<h3>AR Traders</h3>
+
+<div class="info">
+<b>Owner:</b> Muhammad Ramzan
+</div>
+
+<div class="info">
+<b>Phone / WhatsApp:</b> 0321-9664778
+</div>
+
+<div class="info">
+<b>Location:</b> Faisalabad, Pakistan
+</div>
+
+<a
+class="btn btn-green"
+style="margin-top:18px"
+href="https://wa.me/923219664778"
+target="_blank">
+
+💬 Chat on WhatsApp
+
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- CONTACT -->
+
+<section id="contact">
+
+<div class="container">
+
+<div class="section-title">
+
+<span>CONTACT US</span>
+
+<h2>Contact AR Traders</h2>
+
+<p>We're ready to help with your Horeca requirements.</p>
+
+</div>
+
+
+<div class="contact-grid">
+
+<div class="contact-card">
+
+<h3>Business Details</h3>
+
+
+<div class="contact-row">
+
+<div class="contact-icon">👤</div>
+
+<div>
+<small>Owner</small>
+<b>Muhammad Ramzan</b>
+</div>
+
+</div>
+
+
+<div class="contact-row">
+
+<div class="contact-icon">📱</div>
+
+<div>
+<small>Phone / WhatsApp</small>
+<b>0321-9664778</b>
+</div>
+
+</div>
+
+
+<div class="contact-row">
+
+<div class="contact-icon">📍</div>
+
+<div>
+<small>Location</small>
+<b>Faisalabad, Pakistan</b>
+</div>
+
+</div>
+
+
+<div class="contact-row">
+
+<div class="contact-icon">📧</div>
+
+<div>
+<small>Email</small>
+<b>YOUR-EMAIL@example.com</b>
+</div>
+
+</div>
+
+</div>
+
+
+<div class="contact-card">
+
+<h3>Quick Message</h3>
+
+<p style="color:#718078;margin-bottom:20px;">
+
+For prices, availability or bulk orders,
+send us a WhatsApp message.
+
+</p>
+
+<a
+class="btn btn-green"
+style="width:100%;text-align:center"
+href="https://wa.me/923219664778"
+target="_blank">
+
+💬 Message on WhatsApp
+
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- FOOTER -->
+
+<footer>
+
+<div class="container">
+
+<div class="footer-grid">
+
+<div>
+
+<div class="logo">
+
+<div class="logo-box">AR</div>
+
+<div>
+<h2 style="color:white;">AR Traders</h2>
+<small>ALL HORECA ITEMS</small>
+</div>
+
+</div>
+
+<p style="margin-top:15px;">
+
+All Horeca Items Available.
+Professional Horeca product supplies.
+
+</p>
+
+</div>
+
+
+<div>
+
+<h4>Quick Links</h4>
+
+<a href="#home">Home</a>
+<a href="#categories">Categories</a>
+<a href="#products">Products</a>
+<a href="#about">About</a>
+<a href="#contact">Contact</a>
+
+</div>
+
+
+<div>
+
+<h4>Contact</h4>
+
+<a href="https://wa.me/923219664778">
+📱 0321-9664778
+</a>
+
+<a href="#contact">
+👤 Muhammad Ramzan
+</a>
+
+<a href="#contact">
+📍 Faisalabad, Pakistan
+</a>
+
+<a href="#contact">
+📧 Add Your Email
+</a>
+
+</div>
+
+</div>
+
+
+<div class="copyright">
+
+© 2026 AR Traders — All Rights Reserved.
+
+</div>
+
+</div>
+
+</footer>
+
+
+<!-- CART -->
+
+<div class="overlay" id="overlay" onclick="closeCart()"></div>
+
+<div class="cart" id="cart">
+
+<div class="cart-head">
+
+<h2>🛒 Your Cart</h2>
+
+<button class="close" onclick="closeCart()">✕</button>
+
+</div>
+
+
+<div class="cart-items" id="cartItems"></div>
+
+
+<div class="cart-footer">
+
+<div class="total">
+
+<span>Total</span>
+
+<span id="cartTotal">Rs. 0</span>
+
+</div>
+
+<button
+class="btn btn-green"
+style="width:100%;border:0;cursor:pointer"
+onclick="checkout()">
+
+💬 Order on WhatsApp
+
+</button>
+
+</div>
+
+</div>
+
+
+<script>
+
+/* =====================================================
+   PRODUCTS
+   YAHAN APNE PRODUCTS ADD KARO
+   ===================================================== */
+
+const products = [
+
+{
+id:1,
+name:"Mozzarella Cheese",
+price:1850,
+oldPrice:2100,
+category:"Fo
